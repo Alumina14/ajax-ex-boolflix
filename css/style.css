@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 60px;
+  justify-content: space-between;
+}
+
+.nav h1{
+  margin-left: 10px;
+  color: red;
+}
+
+.ricerca{
+  margin-right: 10px;
+}
