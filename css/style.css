@@ -20,3 +20,33 @@
 .ricerca{
   margin-right: 10px;
 }
+
+
+
+
+.containerOutput{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: stretch;
+}
+
+.coverContainer{
+margin: 10px;
+}
+
+.coverContainer span{
+  height: auto;
+  background-color: black;
+  display: block;
+  color: white;
+  width: 280px;
+  height: auto;
+  line-height: 20px;
+}
+
+.flagresize{
+  height: 20px;
+  width: auto;
+}

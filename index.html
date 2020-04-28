@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/0f65486295.js" crossorigin="anonymous"></script>
     <title>Boolfix</title>
   </head>
   <body>
@@ -19,9 +20,20 @@
 
 
 
+<!-- handlebars -->
+<section class="containerOutput">
 
-
-
+</section>
+          <script class="cover" type="text/x-handlebars-template">
+            <span class="coverCover">{{{poster}}}</span>
+            <div class="coverContainer">
+          <span>Titolo del film: {{titolo}} </span>
+					<span>Titolo originale: {{titoloOriginale}} </span>
+					<span>Lingua: {{{lingua}}} </span>
+          <span>Voto: {{{voto}}} </span>
+          <span>Tipo: {{{tipoRichiesta}}} </span>
+            </div>
+          </script>
 
     </main>
 
@@ -29,10 +41,8 @@
 
 
 
-
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script type="text/javascript" src="js/main.js">
 
     </script>
