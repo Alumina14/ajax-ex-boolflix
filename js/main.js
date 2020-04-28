@@ -14,23 +14,23 @@ $('#eventoCerca').click(function(){
 // prima richiesta ajax
 $.ajax({
 
-url : "https://api.themoviedb.org/3/search/movie",
-method : "GET",
-data : {
-api_key: "fba92fa8cc03a5738e0af3d216284ae4",
-language: "it-IT",
-query: valoreRicerca
-},
-success : function(data, stato){
-  console.log(data);
-  var listaMovie = data.results;
-  console.log(listaMovie);
-// richiamo funzione
-  coverOutput(listaMovie, "film");
-},
-error : function (richiesta, stato, errore){
-alert("Errore nell'ottenere l'api ");
-}
+  url : "https://api.themoviedb.org/3/search/movie",
+  method : "GET",
+  data : {
+  api_key: "fba92fa8cc03a5738e0af3d216284ae4",
+  language: "it-IT",
+  query: valoreRicerca
+  },
+  success : function(data, stato){
+    console.log(data);
+    var listaMovie = data.results;
+    console.log(listaMovie);
+  // richiamo funzione
+    coverOutput(listaMovie, "film");
+  },
+  error : function (richiesta, stato, errore){
+    alert("Errore nell'ottenere l'api ");
+  }
 
 });
 
@@ -68,9 +68,9 @@ function coverImg(path) {
 
   if(path){
     var url = "https://image.tmdb.org/t/p/w342" + path;
-    risultato = '<img src="' + url + '" alt="cover">';
+    risultato = '<img src="' + url + '" alt="cover" class="image">';
   } else {
-    risultato = "poster non disponibile"
+    risultato = '<img src="img/placeholder.png" alt="cover" class="image">';
   }
 
   return risultato;

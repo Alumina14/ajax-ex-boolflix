@@ -22,7 +22,26 @@
 }
 
 
+#eventoCerca{
+  padding: 4px 10px;
+  background-color: red;
+  border-color: red;
+  font-weight: bold;
+}
 
+#salvaInput{
+  padding: 4px 10px;
+  font-weight: bold;
+}
+
+#salvaInput:hover{
+  border-color: red;
+}
+
+#eventoCerca:hover{
+  background-color: darkred;
+  border-color: darkred;
+}
 
 .containerOutput{
   display: flex;
@@ -44,9 +63,16 @@ margin: 10px;
   width: 280px;
   height: auto;
   line-height: 20px;
+  text-align: center;
 }
 
 .flagresize{
   height: 20px;
   width: auto;
+}
+
+.image{
+  display: block;
+ width: 100%;
+ height: auto;
 }
